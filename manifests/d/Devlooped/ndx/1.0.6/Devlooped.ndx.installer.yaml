@@ -1,0 +1,24 @@
+# Created with WinGet Releaser using komac v2.17.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Devlooped.ndx
+PackageVersion: 1.0.6
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: ndx.exe
+InstallModes:
+- silentWithProgress
+UpgradeBehavior: install
+Commands:
+- ndx
+ReleaseDate: 2026-10-23
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/devlooped/ndx/releases/download/v1.0.6/ndx-1.0.6-win-x64.zip
+  InstallerSha256: 5BE0DD0EB2EFAD30D4D2C52C6BDD18F63BC76B0F7F436A17CE18EE40BF993BA8
+- Architecture: arm64
+  InstallerUrl: https://github.com/devlooped/ndx/releases/download/v1.0.6/ndx-1.0.6-win-arm64.zip
+  InstallerSha256: 46BCD09DC9C0BBAA7B8C22BD1803F3BABFDDEF501C889A9893265AC12BD0BF8E
+ManifestType: installer
+ManifestVersion: 1.12.0
